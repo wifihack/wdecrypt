@@ -4,12 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 INCLUDEPATH *= include
-LIBS *= -lcrypto
+LIBS *= -lcrypto -lpcap
 
 SOURCES += \
-    wdecrypt.c \
     common.c \
-    crypto.c
+    crypto.c \
+    wdecrypt.cpp
 
 HEADERS += \
     aircrack-ng.h \

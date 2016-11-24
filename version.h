@@ -39,5 +39,5 @@
 
 #define _REVISION 0
 
-extern char * getVersion(char * progname, int maj, int min, int submin, int
+extern char * getVersion(const char * progname, int maj, int min, int submin, int
 			 svnrev, int beta, int rc);

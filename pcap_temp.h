@@ -78,25 +78,6 @@
 // Maximum length of an Information Element
 #define MAX_IE_ELEMENT_SIZE 256
 
-struct pcap_file_header
-{
-    uint32_t magic;
-    uint16_t version_major;
-    uint16_t version_minor;
-    int32_t thiszone;
-    uint32_t sigfigs;
-    uint32_t snaplen;
-    uint32_t linktype;
-};
-
-struct pcap_pkthdr
-{
-    int32_t tv_sec;
-    int32_t tv_usec;
-    uint32_t caplen;
-    uint32_t len;
-};
-
 struct ivs2_filehdr
 {
     uint16_t version;

@@ -194,7 +194,7 @@ int get_ram_size(void) {
 }
 
 /* Return the version number */
-char * getVersion(char * progname, int maj, int min, int submin, int svnrev, int beta, int rc)
+char * getVersion(const char * progname, int maj, int min, int submin, int svnrev, int beta, int rc)
 {
 	int len;
 	char * temp;
