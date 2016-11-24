@@ -936,8 +936,8 @@ usage:
             {
                 stats.nb_plain++;
 
-                if( opt.crypt != CRYPT_NONE )
-                    continue;
+                // if( opt.crypt != CRYPT_NONE )
+                //    continue;
 
                 if( write_packet( f_out, &pkh, h80211 ) != 0 )
                     break;
