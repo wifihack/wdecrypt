@@ -42,7 +42,7 @@
 
 #include "version.h"
 #include "crypto.h"
-#include "pcap.h"
+#include "pcap_temp.h"
 #include "osdep/byteorder.h"
 #include "common.h"
 

@@ -17,7 +17,7 @@ HEADERS += \
     common.h \
     crctable.h \
     crypto.h \
-    pcap.h \
     version.h \
     osdep/byteorder.h \
-    include/eapol.h
+    include/eapol.h \
+    pcap_temp.h
