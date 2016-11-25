@@ -150,7 +150,7 @@ struct dictfiles {
 	int	loaded;				/* Have finished processing? */
 } dicts;
 
-struct options
+struct options_
 {
 	int amode;					 /* attack mode          */
 	int essid_set;				 /* essid set flag       */
@@ -225,7 +225,7 @@ struct options
 
 }
 
-opt;
+opt_;
 
 typedef struct { int idx, val; }
 vote;
