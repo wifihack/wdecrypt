@@ -19,5 +19,4 @@ HEADERS += \
     crypto.h \
     version.h \
     osdep/byteorder.h \
-    include/eapol.h \
-    pcap_temp.h
+    include/eapol.h

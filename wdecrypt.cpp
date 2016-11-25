@@ -44,7 +44,6 @@
 extern "C" {
 #include "version.h"
 #include "crypto.h"
-//#include "pcap_temp.h"
 #include "osdep/byteorder.h"
 #include "common.h"
 }
@@ -53,8 +52,6 @@ extern "C" {
 #define CRYPT_WEP  1
 #define CRYPT_WPA  2
 
-//#define LINKTYPE_ETHERNET       1
-//#define LINKTYPE_IEEE802_11     105
 #define LINKTYPE_PRISM_HEADER   119
 #define LINKTYPE_RADIOTAP_HDR   127
 #define LINKTYPE_PPI_HDR		192
@@ -62,10 +59,10 @@ extern "C" {
 
 #define TCPDUMP_MAGIC           0xA1B2C3D4
 #define TCPDUMP_CIGAM           0xD4C3B2A1
-#define IVSONLY_MAGIC           "\xBF\xCA\x84\xD4"
-#define IVS2_MAGIC              "\xAE\x78\xD1\xFF"
-#define IVS2_EXTENSION		"ivs"
-#define IVS2_VERSION             1
+//#define IVSONLY_MAGIC           "\xBF\xCA\x84\xD4"
+//#define IVS2_MAGIC              "\xAE\x78\xD1\xFF"
+//#define IVS2_EXTENSION		"ivs"
+//#define IVS2_VERSION             1
 
 extern char * getVersion(char * progname, int maj, int min, int submin, int svnrev, int beta, int rc);
 extern int check_crc_buf( unsigned char *buf, int len );
