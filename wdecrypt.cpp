@@ -992,7 +992,7 @@ usage:
     st_1st = st_cur;
   }
 
-  pcap_close( f_in  );
+  // pcap_close( f_in  );
   pcap_close( f_out );
   if(opt.store_bad)
     fclose( f_bad );
