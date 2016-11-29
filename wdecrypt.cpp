@@ -598,6 +598,7 @@ usage:
       case 0: continue;
       case -1:
         printf("pcap_next_ex return -1\n");
+        pcap_close(f_in);
         sleep(1);
         if ((f_in = pcap_open_live(argv[optind], 65535, 1, 1, errbuf)) == NULL)
         {
