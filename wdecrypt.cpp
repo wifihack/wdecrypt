@@ -503,7 +503,6 @@ usage:
     }
   }
 
-  /* open the input and output pcap files */
   char errbuf[PCAP_ERRBUF_SIZE];
   if ((f_in = pcap_open_offline(argv[optind], errbuf)) == NULL)
   {
@@ -599,8 +598,15 @@ usage:
       case 0: continue;
       case -1:
         printf("pcap_next_ex return -1\n");
-        end = true;
-        break;
+        sleep(1);
+        if ((f_in = pcap_open_live(argv[optind], 65535, 1, 1, errbuf)) == NULL)
+        {
+          perror( "pcap_open failed\n" );
+          printf( "Could not open \"%s\".\n", argv[optind] );
+          end = true;
+          break;
+        }
+        continue;
       case -2:
         printf("pcap_next_ex return -2\n");
         end = true;
